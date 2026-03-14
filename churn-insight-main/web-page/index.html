@@ -1,0 +1,180 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previsão de Evasão de Clientes</title>
+    <!-- Link para o arquivo CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Formulário de Previsão de Evasão</h1>
+        <form id="churn-prediction-form">
+            <div class="form-group">
+                <label for="gender">Gênero:</label>
+                <select id="gender" name="gender" required>
+                    <option value="0">Feminino</option>
+                    <option value="1">Masculino</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="senior_citizen">Cidadão Sênior:</label>
+                <select id="senior_citizen" name="senior_citizen" required>
+                    <option value="0">Não</option>
+                    <option value="1">Sim</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="partner">Parceiro:</label>
+                <select id="partner" name="partner" required>
+                    <option value="0">Não</option>
+                    <option value="1">Sim</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="dependents">Dependentes:</label>
+                <select id="dependents" name="dependents" required>
+                    <option value="0">Não</option>
+                    <option value="1">Sim</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="contract_months">Meses de Contrato:</label>
+                <input type="number" id="contract_months" name="contract_months" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone_service">Serviço Telefônico:</label>
+                <select id="phone_service" name="phone_service" required>
+                    <option value="0">Não</option>
+                    <option value="1">Sim</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="multiple_lines">Múltiplas Linhas:</label>
+                <select id="multiple_lines" name="multiple_lines" required>
+                    <option value="no_phone_service">Sem Serviço Telefônico</option>
+                    <option value="no">Não</option>
+                    <option value="yes">Sim</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="internet_service">Serviço de Internet:</label>
+                <select id="internet_service" name="internet_service" required>
+                    <option value="dsl">DSL</option>
+                    <option value="fiber_optic">Fibra Ótica</option>
+                    <option value="no">Não</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="online_security">Segurança Online:</label>
+                <select id="online_security" name="online_security" required>
+                    <option value="no">Não</option>
+                    <option value="yes">Sim</option>
+                    <option value="no_internet_service">Sem Serviço de Internet</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="online_backup">Backup Online:</label>
+                <select id="online_backup" name="online_backup" required>
+                    <option value="no">Não</option>
+                    <option value="yes">Sim</option>
+                    <option value="no_internet_service">Sem Serviço de Internet</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="device_protection">Proteção de Dispositivo:</label>
+                <select id="device_protection" name="device_protection" required>
+                    <option value="no">Não</option>
+                    <option value="yes">Sim</option>
+                    <option value="no_internet_service">Sem Serviço de Internet</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="tech_support">Suporte Técnico:</label>
+                <select id="tech_support" name="tech_support" required>
+                    <option value="no">Não</option>
+                    <option value="yes">Sim</option>
+                    <option value="no_internet_service">Sem Serviço de Internet</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="streaming_tv">Streaming TV:</label>
+                <select id="streaming_tv" name="streaming_tv" required>
+                    <option value="no">Não</option>
+                    <option value="yes">Sim</option>
+                    <option value="no_internet_service">Sem Serviço de Internet</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="streaming_movies">Streaming Filmes:</label>
+                <select id="streaming_movies" name="streaming_movies" required>
+                    <option value="no">Não</option>
+                    <option value="yes">Sim</option>
+                    <option value="no_internet_service">Sem Serviço de Internet</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="contract">Contrato:</label>
+                <select id="contract" name="contract" required>
+                    <option value="month_to_month">Mês a Mês</option>
+                    <option value="one_year">Um Ano</option>
+                    <option value="two_year">Dois Anos</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="paperless_billing">Fatura Digital:</label>
+                <select id="paperless_billing" name="paperless_billing" required>
+                    <option value="0">Não</option>
+                    <option value="1">Sim</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="payment_method">Método de Pagamento:</label>
+                <select id="payment_method" name="payment_method" required>
+                    <option value="electronic_check">Boleto Bancário</option>
+                    <option value="mailed_check">Cheque</option>
+                    <option value="bank_transfer_automatic">Transferência Bancária (Automático)</option>
+                    <option value="credit_card_automatic">Cartão de Crédito (Automático)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="monthly_charges">Custos Mensais:</label>
+                <input type="number" id="monthly_charges" name="monthly_charges" step="0.01" required>
+            </div>
+
+            <div class="form-group">
+                <label for="total_charges">Custos Totais:</label>
+                <input type="number" id="total_charges" name="total_charges" step="0.01" required>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Prever Evasão">
+            </div>
+        </form>
+
+        <div id="prediction-result"></div>
+    </div>
+    <!-- Link para o arquivo JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
+

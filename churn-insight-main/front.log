@@ -1,0 +1,9 @@
+::ffff:127.0.0.1 - - [05/Jan/2026 22:42:33] "HEAD / HTTP/1.1" 200 -
+::ffff:127.0.0.1 - - [05/Jan/2026 22:49:59] "HEAD /style.css HTTP/1.1" 200 -
+::ffff:127.0.0.1 - - [05/Jan/2026 22:50:06] "HEAD /imagem/Gemini_Generated_Image_ql1s0bql1s0bql1s.png HTTP/1.1" 200 -
+::1 - - [05/Jan/2026 22:52:52] "GET / HTTP/1.1" 200 -
+::1 - - [05/Jan/2026 22:52:52] "GET /style.css HTTP/1.1" 200 -
+::1 - - [05/Jan/2026 22:52:52] "GET /script.js HTTP/1.1" 200 -
+::1 - - [05/Jan/2026 22:52:52] "GET /imagem/Gemini_Generated_Image_ql1s0bql1s0bql1s.png HTTP/1.1" 200 -
+::1 - - [05/Jan/2026 22:52:52] code 404, message File not found
+::1 - - [05/Jan/2026 22:52:52] "GET /favicon.ico HTTP/1.1" 404 -
